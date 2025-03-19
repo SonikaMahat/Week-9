@@ -1,0 +1,52 @@
+---
+title: 'Week 9: Presentation'
+author: "Sonika Mahat"
+date: "2025-03-19"
+output: 
+beamer_presentation:
+  theme: "Malmoe"
+  colortheme: "beaver"
+  fontsize: 12pt
+  classoption: "aspectratio = 169"
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  fig.align = 'center'
+  )
+library(tidyverse)
+library(knitr)
+install.packages("Cairo")
+install.packages("xaringan")
+install.packages("rmdformats")
+library(Cairo)
+library(xaringan)
+library(rmdformats)
+```
+
+## R Markdown
+
+This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
+
+## Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+- Bullet 3
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+## Slide with Plot
+
+```{r pressure}
+plot(pressure)
+```
+
